@@ -1,0 +1,28 @@
+REST
+
+RESTFUL ROUTES 
+
+INDEX - Allows us to see ALL information 
+SHOW - Show's you information about 1 specific thing
+NEW 
+CREATE 
+EDIT 
+UPDATE 
+DELETE
+
+
+
+HTTP ACTION VERBS 
+
+GET - Allows us to see information from the internet/ or from the webpage
+POST 
+PUT/PATCH 
+DELETE
+
+
+
+MVC 
+
+Models - Is where All of our classes live that deal with the database
+Views - Is what's being displayed on the webpage (HTML goes)
+Controllers - Is suppposed to be where MOST of our logic goes and where we create routes 

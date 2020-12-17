@@ -1,0 +1,12 @@
+<h1> Book Info </h1>
+
+<h2> Book Title: <%= @book.title %> </h2>
+
+
+<h3> Book author: <%= @book.author %> </h3>
+
+<% if @book.snippet %>
+   <h4> Book Snippet: <%= @book.snippet %> </h4>
+    <%else %>
+        <h4> Book Snippet Not available <h4>
+<% end %>
