@@ -3,10 +3,10 @@
 <form action="/books/<%= @book.id %>" method="post"> 
  <input type="hidden" name="_method" value="patch">
     <label> Author </label>
-    <input type="text" name="author"/>
+    <input type="text" name="book[author]" value="<%=@book.author %>"/>
      <label> Title </label>
-    <input type="text" name="title"/>
+    <input type="text" name="book[title]" value="<%= @book.title %>" />
      <label> Snippet </label>
-    <input type="text" name="snippet"/>
-    <input type="Submit" Value="Create new Book">
+    <input type="text" name="book[snippet]" value="<%= @book.snippet %>"/>
+    <input type="Submit" Value="Edit new Book">
 </form>

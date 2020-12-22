@@ -1,22 +1,6 @@
-require './config/environment'
-require 'pry'
+class BooksController < ApplicationController
 
-class ApplicationController < Sinatra::Base
-
-  configure do
-    set :public_folder, 'public'
-    set :views, 'app/views'
-    # allows us to use patch / delete request 
-    set :method_override, true 
-    
-  end
-
-
-  get "/" do
-    erb :welcome
-  end
-
-  #index 
+      #index 
 
   get "/books" do
     @books = Book.all
@@ -45,6 +29,7 @@ class ApplicationController < Sinatra::Base
     redirect "/books/#{@book.id}"
   end 
 
+  #delete
   delete "/books/:id" do
     @book = Book.find(params[:id])
     @book.destroy
@@ -62,8 +47,4 @@ class ApplicationController < Sinatra::Base
     erb :show
   end 
 
-  
- 
-
-
-end
+end 
