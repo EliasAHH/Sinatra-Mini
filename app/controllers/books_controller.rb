@@ -4,7 +4,7 @@ class BooksController < ApplicationController
 
   get "/books" do
     @books = Book.all
-    erb :index 
+    erb :'books/index' 
   end 
 
   #create 
@@ -16,7 +16,7 @@ class BooksController < ApplicationController
   #edit
   get '/books/:id/edit' do
     @book = Book.find(params[:id])
-    erb :edit 
+    erb :'books/edit' 
   end 
 
   #patch 
@@ -38,13 +38,13 @@ class BooksController < ApplicationController
 
    #new
    get '/books/new' do
-    erb :new 
+    erb :'books/new' 
   end 
 
   # show 
   get "/books/:id" do 
     @book = Book.find(params[:id])
-    erb :show
+    erb :'books/show' 
   end 
 
 end 
