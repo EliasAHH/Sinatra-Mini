@@ -9,7 +9,7 @@ gem 'sqlite3', '~> 1.3.6'
 gem 'thin'
 gem 'shotgun'
 gem 'pry'
-# gem 'bcrypt' # user authentication
+gem 'bcrypt' # user authentication
 gem 'tux'
 gem 'bigdecimal', '1.3.5'
 gem 'rest-client'

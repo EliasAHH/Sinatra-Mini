@@ -33,6 +33,8 @@ Controllers - Is suppposed to be where MOST of our logic goes and where we creat
 
 
 
-Redirect -  
+Sessions - creates a file in your local project (usually a server)  and it saves certain information that you want it to. Sessions only last as long as we have our SERVER open OR 30 minutes. 
 
-Render - 
+Cookies - create a file in your local computer (usually in your browser) and it saves certain information in there that you want. Cookies will stay there as long as you have your computer OR until you clear you cookies 
+
+Passwords Salted Hashes -  Bcrypt is an algorithm gem that allows to take in a password and change it into a more complicated looking password so that it's more difficult to be cracked by a dictionary. 
